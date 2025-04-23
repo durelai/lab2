@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10px;
+        }
+        body
+        {
+            margin-right: 70%;
+
+        }
+        li.listyes::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-image: url("img/kvadratGalka.png");
+            background-size: contain;
+            margin-right: 8px;
+            margin-left: 10px;
+        }
+        li.listno::before
+        {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-image: url("img/kvadrat.png");
+            background-size: contain;
+            margin-right: 8px;
+            margin-left: 10px;
+        }
+        li::after {
+            
+            content: '\2716';
+            color: rgb(248, 0, 0);
+            font-size: 8px;
+            margin-left: 9px;
+        }
+        li:nth-child(odd)
+        {
+            background-color: rgb(165, 204, 218);
+        }
+        li:nth-child(even)
+        {
+            background-color: rgb(173, 216, 230);
+        }
+        li.listyes
+        {
+
+            background-color: whitesmoke;
+            list-style: none;
+        }
+        li.listno
+        {
+            list-style: none;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div><h1>My To Do List</h1>
+        <ul>
+            <li class="listno">Hit the gym</li>
+            <li class="listyes"><s>Pay bills</s></li>
+            <li class="listno">Meet John</li>
+            <li class="listno">Buy eggs</li>
+            <li class="listyes"><s>Read a book</s></li>
+            <li class="listno">Organize office</li>
+            <li class="listno">Eat dinner</li>
+            <li class="listno">Buy apples</li>
+            <li class="listno">Meet George</li>
+            <li class="listno">Feed the cat</li>
+            <li class="listyes"><s>Write a letter</s></li>
+            <li class="listno">Run 1 km</li>
+        </ul>
+    </div>
+</html>

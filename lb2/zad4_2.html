@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+
+        /* Поисковая строка */
+        form {
+            padding: 15px;
+            background: #0066cc;
+            display: flex;
+            justify-content: center;
+        }
+
+        form input[type="search"] {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        form button[type="submit"] {
+            padding: 8px 15px;
+            background: #004080;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+
+        /* Шапка сайта */
+        header {
+            background: white;
+            padding: 20px 0;
+        }
+
+        .photoglav {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+            height: auto;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 25px;
+            margin-top: 5%;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        /* Основное содержимое */
+        h1 {
+            color: #0066cc;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #d32f2f;
+            margin: 25px 0 15px;
+            font-size: 22px;
+            width: 100%;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        /* Подвал */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer .miniphoto {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        body {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: inline-block;
+            text-align: center;
+            border: 2px solid bisque;
+        }
+
+        .MainFoto {
+            display: block;
+            width: 423px;
+            height: 400px;
+        }
+
+        .lowPhoto {
+            width: 104px;
+            height: 107px;
+            border-top: 2px solid bisque;
+            border-right: 2px solid bisque;
+        }
+
+        .gallery a:hover img {
+            transform: scale(0.5, 0.5);
+        }
+
+        .tovar {
+            text-align: left;
+
+
+        }
+        button
+        {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 20%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/search" method="GET">
+        <input type="search" name="q" placeholder="Поиск...">
+        <button type="submit">Найти</button>
+    </form>
+
+    <header>
+        <div class="head">
+            <nav>
+                <li><a href="">Главное</a></li>
+                <li><a href="">Католог</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Корзина</a></li>
+                <li><a href="">О нас</a></li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Бутсы мужские adidas F50 Elite Fg</h1>
+        <div class="gallery">
+            <img src="https://cdn.sportmaster.ru/upload/mdm/media_content/resize/5e5/1008_800_53a5/143000990299.jpg"
+                alt="imj1" class="MainFoto">
+
+            <div>
+                <a href="zad4.html">
+                    <img src="https://cdn.sportmaster.ru/upload/mdm/media_content/resize/3fb/1008_800_653e/143000980299.jpg"
+                        alt="imj2" class="lowPhoto">
+                </a>
+                <a
+                    href="zad4_2.html                                                                                                                                                                                                                                                                        ">
+                    <img src="https://cdn.sportmaster.ru/upload/mdm/media_content/resize/5e5/1008_800_53a5/143000990299.jpg"
+                        alt="imj3" class="lowPhoto">
+                </a>
+                <a href="zad4_3.html">
+                    <img src="https://cdn.sportmaster.ru/upload/mdm/media_content/resize/f77/1008_800_8113/143001000299.jpg"
+                        alt="imj4" class="lowPhoto">
+                </a>
+                <a href="zad4_4.html">
+                    <img src="https://cdn.sportmaster.ru/upload/mdm/media_content/resize/0dd/1008_800_9385/143001010299.jpg"
+                        alt="imj5" class="lowPhoto">
+                </a>
+            </div>
+
+        </div>
+        <div class="tovar">
+
+            <p>Футбольные бутсы F50 Elite от adidas созданы для того, чтобы раскрыть весь потенциал твоей скоростной
+                игры.</p>
+            <h1>Характеристики</h1>
+                <ul>
+                <li>Застёжка: Шнуровка</li>
+                <li>Антибактериальная пропитка: Нет</li>
+                <li>Пол: Мужчины</li>
+            </ul>
+        <button>Добавить в корзину</button>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <p>
+                <span><a href="https://vk.com/feed"><img class="miniphoto"
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt=""></a></span>
+                <span><a href=""><img class="miniphoto"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png"
+                            alt=""></a></span>
+            </p>
+            <p>Сайт создан Колосовым Н.А.</p>
+            <p>&copy 2020 - 2023 Все права защищены</p>
+        </div>
+    </footer>
+</body>
+
+</html>

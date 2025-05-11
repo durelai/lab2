@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоимость доставки</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .delivery-section {
+            margin: 40px 0;
+        }
+        
+        .delivery-section h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: #222;
+            font-weight: 600;
+        }
+        
+        .delivery-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        .delivery-table th {
+            text-align: left;
+            padding: 12px 15px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            font-weight: 600;
+        }
+        
+        .delivery-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .delivery-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .price {
+            font-weight: 600;
+        }
+        
+        .free {
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <section class="delivery-section">
+        <h2>Стоимость доставки</h2>
+        
+        <table class="delivery-table">
+            <thead>
+                <tr>
+                    <th>Регион/Способ доставки</th>
+                    <th>Срок доставки</th>
+                    <th>Стоимость</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Самовывоз (Москва)</td>
+                    <td>1-2 часа</td>
+                    <td class="price free">Бесплатно</td>
+                </tr>
+                <tr>
+                    <td>Курьером по Москве (в пределах МКАД)</td>
+                    <td>1 день</td>
+                    <td class="price">350 ₽</td>
+                </tr>
+                <tr>
+                    <td>Курьером по Москве (за МКАД до 10 км)</td>
+                    <td>1-2 дня</td>
+                    <td class="price">450 ₽</td>
+                </tr>
+                <tr>
+                    <td>Почта России</td>
+                    <td>5-14 дней</td>
+                    <td class="price">от 400 ₽</td>
+                </tr>
+                <tr>
+                    <td>СДЭК (до пункта выдачи)</td>
+                    <td>2-5 дней</td>
+                    <td class="price">от 500 ₽</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

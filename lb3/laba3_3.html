@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Способы оплаты</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .payment-description {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .payment-method {
+            line-height: 33px;
+            position: relative;
+            width: 220px;
+            height: 220px;
+            padding-top: 20px;
+            margin-top: 20px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid #eaeaea;
+        }
+        .payment-method:hover
+        {
+            border-color: red;
+            transform:translateY(-5px);
+        }
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Способы оплаты</h2>
+        <br>
+        <p class="payment-description">
+            В нашем магазине спортивного инвентаря доступны все популярные способы оплаты.<br>
+            Выберите наиболее удобный для вас вариант.
+        </p>
+        <div class="payment-methods">
+            <div class="payment-method">
+                <img src="img/icons8-виза-48.png" alt="visa">
+                <img src="img/icons8-логотип-mastercard-48.png" alt="mastercard">
+                <img src="img/icons8-мир-48.png" alt="mir">
+                <h3>Банковские карты</h3>
+                <p>Visa, Mastercard, МИР</p>
+            </div>
+            <div class="payment-method">
+                <img src="img/icons8-qiwi-48.png" alt="qiwi">
+                <img src="img/icons8-вебмани-48.png" alt="webmoney">
+                <img src="img/icons8-яндекс-деньги-48.png" alt="yandexmoney">
+                <h3>Электронные деньги</h3>
+                <p>Qiwi, ЮMoney, WebMoney</p>
+            </div>
+            <div class="payment-method">
+                <img src="img/icons8-bitcoin-принимается-48.png" alt="qiwi">
+                <img src="img/icons8-ethereum-48.png" alt="webmoney">
+                <img src="img/icons8-tether-48.png" alt="yandexmoney">
+                <h3>Криптовалюта</h3>
+                <p>Bitcoin, Ethereum, USDT</p>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+</body>
+</html>

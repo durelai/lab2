@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(1, 66, 66);
+            color: white;
+        }
+
+        .card {
+            padding: 60px;
+        }
+
+        .navigate {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: gray;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+
+        h1 p {
+            margin: 0;
+        }
+
+        .photo {
+            display: flex;
+            width: 50px;
+            height: 70px;
+        }
+
+        .info {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .info .title {
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: gray;
+        }
+
+        .titleInfo {
+            margin-top: 5px;
+        }
+
+        a {
+            color: aliceblue;
+        }
+        .column-block{
+            display: flex;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 599px) {
+            .card
+            {
+                margin-left: 15px;
+                margin-top: 15px;
+                padding: 0;
+            }
+
+            .column-block
+            {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <nav class="navigate">
+            HOME
+            /
+            Article
+            /
+        </nav>
+
+        <h1>
+            <p>The Difference Between</p>
+            <p>Responsive and</p>
+            <p>Adaptive Design</p>
+        </h1>
+        <div class="info">
+            <div class="photo">
+                <img src="photo/Рисунок2.png" alt="photo">
+            </div>
+            <div class="column-block">
+                <div class="block">
+                <div class="title">Author</div>
+                <div class="titleInfo">Geoff Graham</div>
+            </div>
+            <div class="block">
+                <div class="title">49 Comments</div>
+                <div class="titleInfo">Go to comments</div>
+            </div>
+            </div>
+           <div class="column-block">
+             <div class="block">
+                <div class="title">Published</div>
+                <div class="titleInfo">Nov 11, 2018</div>
+            </div>
+            <div class="block">
+                <div class="title">Updated</div>
+                <div class="titleInfo">Nov 17, 2018</div>
+            </div>
+           </div>
+        </div>
+    </div>
+</body>
+
+</html>

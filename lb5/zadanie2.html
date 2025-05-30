@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input UI Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f8f8f8;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    .input {
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .input.valid {
+      border-color: #4caf50;
+      background-color: #f0fff0;
+
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+
+    .input.invalid {
+      border-color: #f44336;
+      background-color: #fff0f0;
+
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+
+    .checkbox-group label input[type="checkbox"] {
+      display: none;
+    }
+
+    .checkbox-group label {
+      position: relative;
+      padding-left: 35px;
+      margin-right: 20px;
+      cursor: pointer;
+      line-height: 24px;
+      display: inline-block;
+    }
+
+    .checkbox-group label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 45px;
+      height: 25px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      background-color: white;
+      margin-top: -5px;
+    }
+
+    .checkbox-group label::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25px;
+      height: 25px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      background-color: green;
+      margin-top: -5px;
+    }
+
+
+    .checkbox-group label.right-checkbox::after {
+      left: 22px;
+      background-color: red;
+    }
+
+    .checkbox-group label input[type="checkbox"]+span {
+      padding-left: 20px;
+      display: inline-block;
+      min-width: 80px;
+    }
+
+    .radio-group input[type="radio"] {
+      display: none;
+    }
+
+    .radio-group label {
+      position: relative;
+      padding-left: 30px;
+      margin-right: 20px;
+      padding-top: 6px;
+      cursor: pointer;
+    }
+
+    .radio-group label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #4caf50;
+      border-radius: 50%;
+      background-color: white;
+
+    }
+
+    .radio-group input[type="radio"]:checked+span::after {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 8px;
+      width: 16px;
+      height: 17px;
+      background-color: #4caf50;
+      border-radius: 50%;
+    }
+
+
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+
+    .btn.green {
+      background-color: #4caf50;
+    }
+
+    .btn.green:hover {
+      background-color: #45a049;
+    }
+
+    .btn.red {
+      background-color: #f44336;
+    }
+
+    .btn.red:hover {
+      background-color: #e53935;
+    }
+
+    .btn.disabled {
+      background-color: #999;
+      cursor: not-allowed;
+      color: #eee;
+    }
+
+
+    .btn.circle {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border-radius: 50%;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .btn.hover {
+      background-color: #357a38;
+    }
+
+    .btn.hover.red {
+      background-color: #aa2e25;
+    }
+
+
+    textarea {
+      margin-top: 20px;
+      width: 100%;
+      height: 80px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      resize: vertical;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Inputs</h2>
+  <input type="text" class="input" placeholder="Enter some text" />
+  <input type="text" class="input valid" value="valid text" />
+  <input type="text" class="input invalid" value="invalid text" />
+
+  <h2>Check boxes</h2>
+  <div class="checkbox-group">
+    <label><input type="checkbox" checked /><span>Subscribe</span></label>
+    <label class="right-checkbox"><input type="checkbox" /><span>Subscribe</span></label>
+  </div>
+
+  <h2>Radio buttons</h2>
+  <div class="radio-group">
+    Gender:
+    <label><input type="radio" name="gender" checked /><span>Male</span></label>
+    <label><input type="radio" name="gender" /><span>Female</span></label>
+  </div>
+
+  <h2>Buttons</h2>
+  <button class="btn green">Active</button>
+  <button class="btn hover">Hover</button>
+  <button class="btn red">Danger</button>
+  <button class="btn hover red">Hover</button>
+  <button class="btn disabled" disabled>Disabled</button>
+  <button class="btn green circle">+</button>
+  <button class="btn red circle">−</button>
+
+  <h2>Text area</h2>
+  <textarea placeholder="Enter some text..."></textarea>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .PriceCard {
+            margin-left: 25px;
+            margin-top: 13px;
+        }
+
+        .priceMonth .price {
+            display: flex;
+            flex-direction: column;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .priceMonth .month {
+            font-size: 17px;
+            color: gray;
+        }
+
+        .PriceCard {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .cardWrapper {
+            transition: transform 1s ease;
+        }
+
+        .Enterprice {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            height: 305px;
+            width: 178px;
+            border-radius: 13px;
+            transition: transform 1s ease;
+        }
+
+        .Enterprice h1 {
+            border-bottom: 3px solid rgb(199, 55, 86);
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .cardWrapper:hover {
+            transform: scale(1.2);
+            z-index: 10;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+            font-weight: bold;
+            padding-top: 11px;
+            line-height: 0px;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-left: 50px;
+            height: 35px;
+            width: 80px;
+            border-radius: 10px;
+        }
+
+        .Professional {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            height: 305px;
+            width: 178px;
+            border-radius: 13px;
+            transition: transform 1s ease;
+        }
+
+        .Professional h1 {
+            border-bottom: 3px solid orange;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .Professional:hover {
+            transform: scale(1.2);
+            z-index: 10;
+        }
+
+        .Standart {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            height: 305px;
+            width: 178px;
+            border-radius: 13px;
+            transition: transform 1s ease;
+        }
+
+        .Standart h1 {
+            border-bottom: 3px solid blue;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .Standart:hover {
+            transform: scale(1.2);
+            z-index: 10;
+        }
+
+        .Basic {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            height: 305px;
+            width: 178px;
+            border-radius: 13px;
+            transition: transform 1s ease;
+        }
+
+        .Basic h1 {
+            border-bottom: 3px solid rgb(19, 214, 19);
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .Basic:hover {
+            transform: scale(1.2);
+            z-index: 10;
+        }
+
+        .b1 {
+            background-color: rgb(199, 55, 86);
+        }
+
+        .b2 {
+            background-color: rgb(215, 145, 59);
+        }
+
+        .b3 {
+            background-color: rgb(43, 102, 137);
+
+        }
+
+        .b4 {
+            background-color: rgb(99, 187, 52);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="PriceCard">
+        <div class="cardWrapper">
+            <div class="Enterprice">
+                <h1>ENTERPRISE</h1>
+                <div class="priceMonth">
+                    <span class="price">$69</span>
+                    <span class="month">per month</span>
+                </div>
+                <div class="discription">
+                    <span class="info">10GB disk space</span>
+                    <br><span class="info">100GB monthly bandwidth</span>
+                    <br><span class="info">20 email accounts</span>
+                    <br><span class="info">Unlimeted subdomens</span>
+                </div>
+                <button class="b1">BUY</button>
+            </div>
+        </div>
+        <div class="Professional">
+            <h1>PROFESSIONAL</h1>
+            <div class="priceMonth">
+                <span class="price">$29</span>
+                <span class="month">per month</span>
+            </div>
+            <div class="discription">
+                <span class="info">5GB disk space</span>
+                <br><span class="info">60GB monthly bandwidth</span>
+                <br><span class="info">10 email accounts</span>
+                <br><span class="info">Unlimeted subdomens</span>
+            </div>
+            <button class="b2">BUY</button>
+        </div>
+        <div class="Standart">
+            <h1>STANDART</h1>
+            <div class="priceMonth">
+                <span class="price">$19</span>
+                <span class="month">per month</span>
+            </div>
+            <div class="discription">
+                <span class="info">3GB disk space</span>
+                <br><span class="info">30GB monthly bandwidth</span>
+                <br><span class="info">5 email accounts</span>
+                <br><span class="info">Unlimeted subdomens</span>
+            </div>
+            <button class="b3">BUY</button>
+        </div>
+        <div class="Basic">
+            <h1>BASIC</h1>
+            <div class="priceMonth">
+                <span class="price">$9</span>
+                <span class="month">per month</span>
+            </div>
+            <div class="discription">
+                <span class="info">1GB disk space</span>
+                <br><span class="info">10GB monthly bandwidth</span>
+                <br><span class="info">2 email accounts</span>
+                <br><span class="info">Unlimeted subdomens</span>
+            </div>
+            <button class="b4">BUY</button>
+        </div>
+    </div>
+</body>
+
+</html>

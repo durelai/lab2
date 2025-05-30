@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 40px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 10px 10px 15px 15px;
+      width: 430px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    input[type="text"] {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    .MonthYearCCV {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .MonthYearCCV input[type="text"] {
+      flex: 1;
+      text-align: center;
+    }
+
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .checkbox-wrapper input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .checkbox-wrapper a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button-group button {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .cancel-btn {
+      background: #dc3545;
+      color: white;
+    }
+
+    .pay-btn {
+      background: #f0ad4e;
+      color: white;
+    }
+    .h1MonthYearCCV
+    {
+        display: flex;
+        gap: 63px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <input type="text" name="CardNumber" placeholder="Enter Card Number">
+    <div class="h1MonthYearCCV">
+        <span>Expiry Month</span>
+        <span>Expiry Year</span>
+        <span>CCV</span>
+    </div>
+    <div class="MonthYearCCV">
+      <input type="text" name="ExpiryMonth" placeholder="MM">
+      <input type="text" name="ExpiryYear" placeholder="YY">
+      <input type="text" name="CCV" placeholder="CCV">
+    </div>
+
+    <input type="text" name="NameOnCard" placeholder="Name On The Card">
+
+    <div class="button-group">
+      <button class="cancel-btn">CANCEL</button>
+      <button class="pay-btn">PAY NOW</button>
+    </div>
+  </div>
+
+</body>
+</html>
